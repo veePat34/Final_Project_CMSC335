@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Entry</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/journals.css">
+    </head>
+    
+    <body>
+        <h1>Create a Journal Entry</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a class="highlight" href="/entries/add">Add Journal Entry</a>
+            <a href="/entries">View All Entries</a>
+        </nav>
+
+        <div class="container">
+            <form action="/entries/add" method="POST">
+                <label>Title:</label><input type="text" name="title" required>
+
+                <label>Body:</label><textarea name="body" rows="5" required></textarea>
+
+                <label>Date of Entry:</label><input type="date" name="entryDate" required>
+
+                <label><input type="checkbox" name="includeAstronomy"> Add astronomy image </label>
+
+                <input type="hidden" id="timezone" name="timezone">
+                
+                <button type="submit">Add Entry</button>
+            </form>
+        </div>
+        <script>
+            document.getElementById("timezone").value = new Date().getTimezoneOffset();
+        </script>
+    </body>
+</html>

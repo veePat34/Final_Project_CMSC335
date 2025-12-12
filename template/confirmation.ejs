@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Journal Entry Recorded</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/journals.css">
+    </head>
+    
+    <body>
+        <h1>Journal Entry Recorded</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/entries/add">Add Journal Entry</a>
+            <a href="/entries">View All Entries</a>
+        </nav>
+
+        <div class="container">
+            <h2>Success!</h2>
+            <p>Your journal entry for <strong><%= entryDate %></strong> has been recorded.</p>
+            <p>You can <a href="/entries/<%= entryId %>">view your entry here</a> or go back to the <a href="/entries/add">Add Entry page</a>.</p>
+        </div>
+    </body>
+</html>

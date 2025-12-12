@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Entries</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/journals.css">
+    </head>
+
+    <body>
+        <h1>Your Journal Entries</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/entries/add">Add Journal Entry</a>
+            <a class="highlight" href="/entries">View All Entries</a>
+        </nav>
+
+        <div class="container">
+            <% if (entries.length > 0) { %>
+                <ul>
+                    <% entries.forEach(e => { %>
+                        <li>
+                            <a class="entry-link" href="/entries/<%= e._id %>"><strong><%= e.title %></strong> — <%= e.date %></a>
+                        </li>
+                    <% }) %>
+                </ul>
+            <% } else { %>
+                <p>There are currently no journal entries!</p>
+            <% } %>
+        </div>
+    </body>
+</html>

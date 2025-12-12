@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Journal Entry Not Recorded</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/journals.css">
+    </head>
+
+    <body>
+        <h1>Journal Entry Not Recorded</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/entries/add">Add Journal Entry</a>
+            <a href="/entries">View All Entries</a>
+        </nav>
+
+        <div class="container">
+            <h2>Failed!</h2>
+            <p>You inputted <strong><%= entryDate %></strong> which is a future date.</p>
+            <p>You can only add entries for past dates and today's date.</p><br>
+            <p>You can go back to the <a href="/entries/add">Add Entry page</a>.</p>
+        </div>
+    </body>
+</html>

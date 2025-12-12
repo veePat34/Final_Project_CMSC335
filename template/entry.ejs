@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= entry.title %></title>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/journals.css">
+    </head>
+
+    <body>
+        <h1>Journal Entry</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/entries/add">Add Journal Entry</a>
+            <a href="/entries">View All Entries</a>
+        </nav>
+
+        <div class="container">
+            <p><%= entry.date %></p>
+            <h2><%= entry.title %></h2>
+            <p><%= entry.body %></p><br>
+
+            <% if (entry.includeAstronomy) { %>
+                <h3>Astronomy Image of the Day:</h3>
+                <img src="<%= entry.astronomyImage %>" alt="NASA image">
+            <% } %>
+        </div>
+    </body>
+</html>
