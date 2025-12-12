@@ -44,7 +44,6 @@ app.get("/entries", async (req, res) => {
   res.render("all", { entries });
 });
 
-
 //Add entry page
 app.get("/entries/add", (req, res) => {
   res.render("add");
@@ -101,7 +100,6 @@ app.post("/entries/add", async (req, res) => {
       includeAstronomy: !!includeAstronomy,
       astronomyImage
     });
-
     res.render("confirmation", { entryDate, entryId: newEntry._id });
 
   } catch (err) {
@@ -109,7 +107,6 @@ app.post("/entries/add", async (req, res) => {
     res.send("An error occurred. Please try again.");
   }
 });
-
 
 //View past entries
 app.get("/entries/:id", async (req, res) => {
