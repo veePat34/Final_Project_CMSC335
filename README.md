@@ -11,4 +11,4 @@
 
 **Contact Email:** dpatel63@terpmail.umd.edu
 
-**Deployed App Link:** To do
+**Deployed App Link:** [https://final-project-cmsc335-journals.onrender.com](https://final-project-cmsc335-journals.onrender.com)
