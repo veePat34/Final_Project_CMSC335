@@ -4,7 +4,7 @@
 
 **App Description:** This is a journaling website that allows users to create and view daily journal entries. Users are restricted to one entry a day and cannot create journals for future dates. Users can also include an optional astronomy images that may represent their day from NASA’s APOD API.
 
-**YouTube Video Link:** To Do
+**YouTube Video Link:** [https://www.youtube.com/watch?v=_eb5YbBDLR4](https://www.youtube.com/watch?v=_eb5YbBDLR4)
 
 **APIs:**  
 - NASA APOD API ([https://api.nasa.gov](https://api.nasa.gov))  
